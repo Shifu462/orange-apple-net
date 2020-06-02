@@ -1,0 +1,13 @@
+*.png
+*.jpg
+
+.idea
+.ipynb_*
+__pycache__
+
+!/.vscode/settings.json
+.vscode/*/
+saved_models/*
+
+/Test
+/Train
