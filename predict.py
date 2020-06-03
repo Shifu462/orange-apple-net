@@ -13,6 +13,11 @@ from numpy_helpers import setup_numeric_floats
 
 PREDICTION_MAP = { 0: 'Apple', 1: 'Orange' }
 
+# FORCED_MODEL_NAME = './saved_models/binary.h5'
+# FORCED_IMG = './Dataset/Test/a/33_100.jpg'
+FORCED_MODEL_NAME = ''
+FORCED_IMG = ''
+
 
 def get_prediction(model, image_path):
     img = imgext.load_img(img_path) / 255.0
@@ -25,16 +30,16 @@ def get_prediction(model, image_path):
 
 
 if __name__ == "__main__":
-    if len(argv) != 3:
+    if len(argv) != 3 and not FORCED_IMG and not FORCED_MODEL_NAME:
         print('Wrong args count. Must be: `predict.py model.h5 img.png`')
         exit(1)
 
     setup_numeric_floats()
 
     model_file_name = argv[1]
+    img_path = argv[2]
     model = load_model(model_file_name)
 
-    img_path = argv[2]
 
     prediction_output = get_prediction(model, img_path)
 

@@ -1,4 +1,4 @@
-size = 64
+size = 100
 
 width, height = size, size
 
