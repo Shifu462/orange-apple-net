@@ -1,12 +1,12 @@
-*.png
-*.jpg
+# *.png
+# *.jpg
+
+.vscode
 
 .idea
 .ipynb_*
 __pycache__
 
-!/.vscode/settings.json
-.vscode/*/
 saved_models/*
 
 /Log
