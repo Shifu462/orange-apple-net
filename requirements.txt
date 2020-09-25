@@ -17,4 +17,4 @@ opencv_python == 4.2.0.34
 # Notebook.ipynb: 15
 # predict.py: 6,7
 # train.py: 14
-tensorflow == 2.2.0
+tensorflow == 2.2.1
